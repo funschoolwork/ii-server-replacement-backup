@@ -44,13 +44,13 @@ function initData() {
       // "menu-version"        : latest released version (shown in update prompt)
       // "min-version"         : if client is below this, menu gets DISABLED
       // "min-console-version" : if below this, admin list is NOT loaded
-      "menu-version": "8.4.0",
+      "menu-version": "8.5.0",
       "min-version": "8.0.0",
       "min-console-version": "1.0.0",
 
       // ── Display ──────────────────────────────────────────────────────
       // Placeholders: {0}=version, {1}=mod count, {2}=build type, {3}=build timestamp
-      "motd": "You are using build {0}. Welcome to ii's Stupid Menu!",
+      "motd": "You are using build {0}. Welcome to ii's Stupid Menu! SERVER FIX BY N5!",
       "discord-invite": "https://discord.gg/iidk",
 
       // ── Admins ───────────────────────────────────────────────────────
@@ -71,9 +71,9 @@ function initData() {
       "patreon": [],
 
       // ── Poll ─────────────────────────────────────────────────────────
-      "poll": "What goes well with cheeseburgers?",
-      "option-a": "Fries",
-      "option-b": "Chips",
+      "poll": "test",
+      "option-a": "a",
+      "option-b": "b",
 
       // ── Detected / disabled mods ─────────────────────────────────────
       // Any mod button names listed here will be force-disabled on all clients
