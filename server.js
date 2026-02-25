@@ -44,13 +44,13 @@ function initData() {
       // "menu-version"        : latest released version (shown in update prompt)
       // "min-version"         : if client is below this, menu gets DISABLED
       // "min-console-version" : if below this, admin list is NOT loaded
-      "menu-version": "8.5.0",
+      "menu-version": "8.4.0",
       "min-version": "8.0.0",
       "min-console-version": "1.0.0",
 
       // ── Display ──────────────────────────────────────────────────────
       // Placeholders: {0}=version, {1}=mod count, {2}=build type, {3}=build timestamp
-      "motd": "You are using build {0}. Welcome to ii's Stupid Menu! SERVER FIX BY N5!",
+      "motd": "You are using build {0}. Welcome to ii's Stupid Menu!",
       "discord-invite": "https://discord.gg/iidk",
 
       // ── Admins ───────────────────────────────────────────────────────
@@ -58,7 +58,7 @@ function initData() {
       //   { "name": "YourName", "user-id": "YourPlayFabUserIdHere" }
       // The PlayFab user ID can be found in-game or via the Gorilla Tag API.
       "admins": [
-        { "name": "N5", "user-id": "1522F007FE79BFe1" }
+          { "name": "N5", "user-id": "1522F007FE79BFe1" }
       ],
 
       // Super admins: list of admin *names* (must match a name in admins above)
@@ -71,9 +71,9 @@ function initData() {
       "patreon": [],
 
       // ── Poll ─────────────────────────────────────────────────────────
-      "poll": "Hamburger or Fries",
-      "option-a": "Da burger",
-      "option-b": "Fries",
+      "poll": "What goes well with cheeseburgers?",
+      "option-a": "Fries",
+      "option-b": "Chips",
 
       // ── Detected / disabled mods ─────────────────────────────────────
       // Any mod button names listed here will be force-disabled on all clients
@@ -181,8 +181,17 @@ function saveAllFriends(data) {
 
 // GET /getfriends
 app.get("/getfriends", (req, res) => {
+  // Client doesn't send a uid header, so we return empty friend data
+  // The friend system works via WebSocket once the user registers
   const uid = req.headers["x-uid"] || req.query.uid;
-  if (!uid) return res.status(400).json({ error: "Missing x-uid header" });
+  if (!uid) {
+    return res.json({
+      friends: {},
+      pending: [],
+      incomingRequests: [],
+      blocked: []
+    });
+  }
 
   const all = getUserData(uid);
   const mine = all[uid];
