@@ -50,7 +50,7 @@ function initData() {
 
       // ── Display ──────────────────────────────────────────────────────
       // Placeholders: {0}=version, {1}=mod count, {2}=build type, {3}=build timestamp
-      "motd": "You are using build {0}. Welcome to ii's Stupid Menu!",
+      "motd": "You are using build {0}. Welcome to ii's Stupid Menu! SERVER FIX BY N5!!!",
       "discord-invite": "https://discord.gg/iidk",
 
       // ── Admins ───────────────────────────────────────────────────────
