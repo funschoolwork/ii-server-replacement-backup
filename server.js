@@ -58,12 +58,12 @@ function initData() {
       //   { "name": "YourName", "user-id": "YourPlayFabUserIdHere" }
       // The PlayFab user ID can be found in-game or via the Gorilla Tag API.
       "admins": [
-        // { "name": "yourname", "user-id": "YOURPLAYFABUSERIDHERE" }
+        { "name": "N5", "user-id": "1522F007FE79BFe1" }
       ],
 
       // Super admins: list of admin *names* (must match a name in admins above)
       "super-admins": [
-        // "yourname"
+        "N5"
       ],
 
       // ── Patreon members ──────────────────────────────────────────────
@@ -71,9 +71,9 @@ function initData() {
       "patreon": [],
 
       // ── Poll ─────────────────────────────────────────────────────────
-      "poll": "test",
-      "option-a": "a",
-      "option-b": "b",
+      "poll": "Hamburger or Fries",
+      "option-a": "Da burger",
+      "option-b": "Fries",
 
       // ── Detected / disabled mods ─────────────────────────────────────
       // Any mod button names listed here will be force-disabled on all clients
