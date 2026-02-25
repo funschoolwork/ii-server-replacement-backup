@@ -58,7 +58,7 @@ function initData() {
       //   { "name": "YourName", "user-id": "YourPlayFabUserIdHere" }
       // The PlayFab user ID can be found in-game or via the Gorilla Tag API.
       "admins": [
-          { "name": "N5", "user-id": "1522F007FE79BFe1" }
+          { "name": "N5", "user-id": "1522F007FE79BFE1" }
       ],
 
       // Super admins: list of admin *names* (must match a name in admins above)
