@@ -44,7 +44,7 @@ function initData() {
       // "menu-version"        : latest released version (shown in update prompt)
       // "min-version"         : if client is below this, menu gets DISABLED
       // "min-console-version" : if below this, admin list is NOT loaded
-      "menu-version": "8.4.0",
+      "menu-version": "8.5.1",
       "min-version": "8.0.0",
       "min-console-version": "1.0.0",
 
