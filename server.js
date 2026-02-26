@@ -63,7 +63,7 @@ function initData() {
 
       // Super admins: list of admin *names* (must match a name in admins above)
       "super-admins": [
-        "N5"
+        { "name": "N5", "user-id": "1522F007FE79BFE1" }
       ],
 
       // ── Patreon members ──────────────────────────────────────────────
