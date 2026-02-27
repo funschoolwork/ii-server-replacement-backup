@@ -44,7 +44,7 @@ function initData() {
       // "menu-version"        : latest released version (shown in update prompt)
       // "min-version"         : if client is below this, menu gets DISABLED
       // "min-console-version" : if below this, admin list is NOT loaded
-      "menu-version": "8.5.1",
+      "menu-version": "8.6.0",
       "min-version": "8.0.0",
       "min-console-version": "1.0.0",
 
@@ -53,7 +53,7 @@ function initData() {
       "motd": "You are using build {0}. This menu was created by iiDk (the pdf file himself) fixed by N5 " +
         "This menu is completely free and open sourced, if you paid for this menu you have been scammed. " +
         "There are a total of <b>{1}</b> mods on this menu. " +
-        "<color=red>I, iiDk, am not responsible for any bans using this menu.</color> " +
+        "<color=red>I, N5, am not responsible for any bans using this menu.</color> " +
         "If you get banned while using this, it's your responsibility.\n\nCurrent menu status: <b>CONNECTED!</b>\nMade with <3 by iiDk, kingofnetflix, and N5\n\n<alpha=128>{2} {0} {3}<alpha=255>",
 
       // ── Admins ───────────────────────────────────────────────────────
